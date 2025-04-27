@@ -4,7 +4,7 @@ import connectToDatabase from './db/db.js';
 import studentRoutes from './routes/studentRoutes.js';
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
